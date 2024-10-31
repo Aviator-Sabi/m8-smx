@@ -12,10 +12,10 @@
 }
 
 .four_zero_four_bg {
-    background-image: url('/mnt/data/unnamed.gif');
+    background-image: url(img/the_cave_man.gif);
     height: 400px;
     background-position: center;
-    background-size: cover; /* Ensures the image covers the section */
+    background-size: cover; 
 }
 
 .four_zero_four_bg h1 {
@@ -23,7 +23,7 @@
 }
 
 .contant_box_404 {
-    margin-top: -50px; /* Fix the negative margin */
+    margin-top: -50px; 
 }
 
 .link_404 {
