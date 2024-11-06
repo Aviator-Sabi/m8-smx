@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buissness</title>
+</head>
+<body><div class="background"></div>
+    <div id="curve" class="card" style="background-image: url('your-card-image.jpg');">
+        <div class="footer">
+            <div class="connections">
+                <a href="https://www.facebook.com" target="_blank" class="connection facebook">
+                    <div class="icon" style="background-image: url('facebook-icon.png');"></div>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="connection twitter">
+                    <div class="icon" style="background-image: url('twitter-icon.png');"></div>
+                </a>
+                <a href="https://www.behance.net" target="_blank" class="connection behance">
+                    <div class="icon" style="background-image: url('behance-icon.png');"></div>
+                </a>
+            </div>
+        </div>
+        <svg id="curve">
+            <path id="p" d="M0,200 Q100,400 400,200 V150 H0 V50" transform="translate(0 300)">
+                <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                <!-- Slide up animation -->
+                <animate xlink:href="#p" attributeName="d" 
+                         to="M0,50 Q100,100 400,50 H0 V50" 
+                         fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout"
+                         dur="0.1s" id="bounce1" />
+                <!-- Slide down and curve in animation -->
+                <animate xlink:href="#p" attributeName="d"
+                         to="M0,50 Q80,400 400,50 H0 V50" 
+                         fill="freeze" begin="bounce1.end" end="dummyRect.mouseout"
+                         dur="0.15s" id="bounce2" />
+            </path>
+        </svg>
+    </div>
+</body>
+</html>
