@@ -1,0 +1,22 @@
+
+
+.body-container.earth::before, .body-container.earth::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/*content*/
+.body-container.earth::before{
+    translate: -45% -45%;
+    width: calc(var(--size)/2);
+    height: calc(var(--size)/1.8);
+    border-radius: 50% 100%;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        70% 100%
+    );
+} 

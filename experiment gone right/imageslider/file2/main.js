@@ -3,12 +3,6 @@ const bodyElement = document.body;
 const randomizeElement = document.querySelector(".randomize");
 const destinations = [
   {
-    name: "Sahara",
-    location: "Marrakech",
-    img:
-      "https://cdn.pixabay.com/photo/2021/11/26/17/26/dubai-desert-safari-6826298_1280.jpg"
-  },
-  {
     name: "Maldives",
     location: "Indian Ocean",
     img:

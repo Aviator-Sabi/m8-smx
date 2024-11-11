@@ -1,0 +1,36 @@
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+.main{
+    height: 50%;
+    width: 50%;
+    background-color: #838383;
+    padding: 50px;
+}
+.c1{
+    height: 100px;
+    width: 80%;
+    background-color: #DAA520;
+    padding: 50px;
+}
+
+.c2{
+    height: 100px;
+    width: 80%;
+    background-color: #0094cc;
+    border: greenyellow 10px solid;
+}
+
+.try{
+    height: 200px;
+    width: 80%;
+    background: linear-gradient(to bottom,#f5ca5e , #ffb700);
+    margin: 70px;
+
+}
+.c2 h1{
+    margin-top: 80px;
+    margin-left: 120px;
+
+}
