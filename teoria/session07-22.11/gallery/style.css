@@ -1,0 +1,43 @@
+body {
+    background-color: aliceblue;
+}
+    
+footer {
+    background-color: rgb(55, 55, 172);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+header{
+    background-color: #FFFFC5;
+    padding: 40px;
+    margin: 50px;
+}
+h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+.card{
+    text-transform: capitalize;
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    background-color: rgb(235, 232, 232);
+    padding: 10px;
+    border-radius: 10px;
+    border: lightslategray solid 2px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+}
+.card2{
+    background-color: bisque;
+}
+img{
+    width: 100%;
+}
+.main{
+    text-align: center;
+    height: 70vh;
+}

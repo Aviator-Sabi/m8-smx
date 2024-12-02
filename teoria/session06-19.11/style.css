@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    padding: 50px;
+}
+
+main{
+    background-color: brown;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+h1{
+    border: yellow 5px solid;
+    padding: 10px;
+    color: white;
+    font-family: 'doto';
+}
+
+h2{
+    border: palevioletred 3px solid;
+    padding: 5px;
+    color: white;
+}
+
+ul {
+    border: green 5px solid
+}
+
+ul li{
+    padding: 10px;
+    color: blue;
+}
+
+#descripcion{
+    background-color: darkslateblue;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+#descripcion h2{
+    color: pink;
+    border: none;
+}
+
+#contenido{
+    color: blue;
+}
+
+.laquetuquieras{
+    color: white;
+}
