@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="form">
+            <!-- NAME ROW -->
+            <label for="name" class="form-row">
+                <input autocomplete="name" type="text" id="name" name="name" placeholder="Name" required>
+            </label>
+            <!-- EMAIL ROW -->
+            <label for="email" class="form-row">
+                <input autocomplete="email" type="email" id="email" name="email" placeholder="E-mail" required>
+            </label>
+            <!-- SUBSCRIBE AGREEMENT -->
+            <label for="subscribe" class="form-row">
+                <input type="checkbox" id="subscribe" name="subscribe"> Agree to all
+            </label>
+            <!-- Submit Button -->
+            <div class="form-row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

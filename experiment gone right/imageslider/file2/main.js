@@ -6,19 +6,19 @@ const destinations = [
     name: "Maldives",
     location: "Indian Ocean",
     img:
-      "https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg"
+      "img/maldives-1993704_1280.jpg"
   },
   {
     name: "Dolomites",
     location: "Italy",
     img:
-      "https://cdn.pixabay.com/photo/2020/03/29/09/24/pale-di-san-martino-4979964_1280.jpg"
+      "img/pale-di-san-martino-4979964_1280.jpg"
   },
   {
     name: "Highland",
     location: "Scotland",
     img:
-      "https://cdn.pixabay.com/photo/2014/11/21/03/26/neist-point-540119_1280.jpg"
+      "img/neist-point-540119_1280.jpg"
   },
   {
     name: "Kleifarvatn",
