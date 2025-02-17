@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicción a los Videojuegos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6ec7, #ff3b3f);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .content {
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: linear-gradient(to right, #f06, #f79c42);
+            padding: 10px 0;
+            font-size: 1em;
+        }
+
+        a {
+            color: #ff3b3f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .video-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+        }
+
+        iframe, video {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .audio-container {
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            iframe, video {
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>La Adicción a los Videojuegos</h1>
+    </header>
+
+    <div class="content">
+        <h2 class="section-title">El Impacto de los Videojuegos en la Sociedad</h2>
+        <p>Este video explora la adicción a los videojuegos, un fenómeno creciente que afecta a muchas personas en todo el mundo. El propósito de este contenido es crear conciencia sobre los peligros que conlleva el juego excesivo y cómo esto puede tener efectos en la salud mental y física.</p>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <h2 class="section-title">Video sobre la Adicción a los Videojuegos</h2>
+        <p>En este video exploramos los efectos que los videojuegos pueden tener en las personas cuando se convierten en una adicción.</p>
+        <!-- Video insertado con iframe -->
+        <iframe src="https://www.youtube.com/embed/tZpcT4Rzc7w" title="Adicción a los Videojuegos" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Alternativa de video HTML5 -->
+        <p>Si prefieres ver el video directamente, también puedes verlo aquí:</p>
+        <video controls>
+            <source src="video_adiccion_videojuegos.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+    </div>
+
+    <div class="content">
+        <h2 class="section-title">Mensaje e Impacto Social del Video</h2>
+        <p>El video intenta sensibilizar a la audiencia sobre la adicción a los videojuegos y sus efectos en la vida diaria. Cada vez más personas se sienten atrapadas por el deseo de jugar sin medida, lo que interfiere en sus relaciones sociales, estudios o trabajo. La prevención es clave, y este video es un llamado a la reflexión sobre el tiempo que pasamos frente a las pantallas.</p>
+    </div>
+
+    <!-- Audio Section -->
+    <div class="audio-container">
+        <h2 class="section-title">Música de Fondo</h2>
+        <p>La música utilizada en este video proviene de una librería de música libre de derechos.</p>
+        <audio controls>
+            <source src="audio_night_sky.mp3" type="audio/mp3">
+            
+        </audio>
+    </div>
+
+    <footer>
+        <p>Página hecha por: Núria Giles</p>
+    </footer>
+
+</body>
+</html>

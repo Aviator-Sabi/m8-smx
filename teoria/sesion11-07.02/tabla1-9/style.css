@@ -1,0 +1,10 @@
+body{
+    display: flex
+}
+table{
+    margin-right: 10px;
+    gap: 20px;
+}
+th{
+    background-color: bisque;
+}

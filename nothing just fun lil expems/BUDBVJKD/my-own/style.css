@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #fdfdfd;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+header .logo-svg {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #888;
+}
+
+/* Landing Section */
+.landing {
+    text-align: center;
+    padding: 50px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.landing h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+/* Video Section */
+.video-section {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+iframe, video {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.impact-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Audio Section */
+.audio-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.license-info {
+    font-size: 14px;
+    color: #555;
+}
+
+.license-info a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.license-info a:hover {
+    color: #888;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .video-container {
+        gap: 10px;
+    }
+}

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    overflow: hidden;
+}
+.login-container {
+    width: 400px;
+    background-color: rgba(30,30,30,0.9);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        #00ff00
+    );
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+}
+.login-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #121212;
+    margin: 10px;
+    border-radius: 10px;
+    z-index: -1;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.logo {
+    text-align: center;
+    color: #00ff00;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0,255,0,0.5);
+}
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: rgba(50,50,50,0.8);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #00ff00;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.input-group input:focus {
+    border-color: #00ff00;
+    box-shadow: 0 0 15px rgba(0,255,0,0.3);
+}
+.input-group input::placeholder {
+    color: rgba(0,255,0,0.5);
+}
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ff00;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.login-btn:hover {
+    background-color: #00cc00;
+    transform: scale(1.05);
+}
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 15px;
+    display: none;
+}
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}

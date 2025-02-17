@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas class="matrix-background" id="matrixCanvas"></canvas>
+    <div class="login-container">
+        <div class="logo">Sign in page</div>
+        <div id="errorMessage" class="error-message"></div>
+        <form id="loginForm">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="username" 
+                    placeholder="EMAIL" 
+                    required
+                >
+            </div>
+            <div class="input-group">
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="PASSWORD" 
+                    required
+                >
+            </div>
+            <button type="submit" class="login-btn">Sign in</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 
+            
