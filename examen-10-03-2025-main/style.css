@@ -1,0 +1,431 @@
+/* General Styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f1923; 
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #1a2a3a;
+    padding: 20px;
+}
+
+/* Logo */
+#header h1 {
+    color: #ff4655;
+    margin: 0; 
+    padding-left: 200px;
+}
+
+/* Navigation Menu */
+#navigation {
+    margin-left: 500px;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+#navigation ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    justify-content: center; 
+}
+
+#navigation ul li {
+    margin-left: 20px;
+}
+
+#navigation a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#navigation a:hover {
+    text-decoration: underline; 
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('img/img-back.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 0 20px; 
+}
+
+/* Hero Title */
+#hero h2 {
+    color: white;
+    font-size: 3em; 
+    margin: 0; 
+    text-shadow: 2px 2px 4px #00000099; 
+}
+
+/* Hero Button (Registration) */
+.hero-button {
+    background-color: #ff4655;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none; 
+    display: inline-block; 
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+    background-color: #d4404c; 
+}
+
+/* Centered content for heading and paragraph */
+.schedule-centerd{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Schedule Section */
+#schedule {
+    background-color: #1a2a3a;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+/* Schedule Heading */
+#schedule h2 {
+    color: #ff4655;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-top-left-radius: 10%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff4655; /* Red background */
+    color: white; /* White text */
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #1a2a3a;
+}
+
+tr:nth-child(odd) {
+    background-color: #0f1923;
+}
+
+tbody tr:hover {
+    background-color: #333; 
+}
+/* Registration Section */
+#registration {
+    background-color: #1a2a3a;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+#registration h2 {
+    color: #ff4655; 
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #0f1923; 
+    color: white;
+    border: 1px solid #1a2a3a; 
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff4655;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d4404c; 
+}
+
+/* Featured Games Section */
+#registration {
+    background-color: #1a2a3a;
+    padding: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: white;
+}
+
+#registration h2 {
+    color: #ff4655;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #1a2a3a;
+    background-color: #0f1923;
+    color: white;
+    border-radius: 5px;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    outline-color: #ff4655; /* Focus border color */
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff4655;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #d4404c;
+}
+
+/* Featured Games Section */
+#featured-games {
+    background-color: #1a2a3a;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#featured-games h2 {
+    color: #ff4655;
+    margin-bottom: 10px;
+}
+
+#featured-games p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Cards container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping when there is not enough space */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+/* Individual Card */
+.card {
+    background-color: #0f1923;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #ff4655;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.card p strong {
+    color: #ff4655;
+}
+
+.card-button {
+    background-color: #ff4655;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card-button:hover {
+    background-color: #d4404c;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+/* Video Section */
+#video {
+    background-color: #1a2a3a;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+/* Video Section */
+#video {
+    background-color: #1a2a3a;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#video h2 {
+    color: #ff4655;
+    margin-bottom: 10px;
+}
+
+#video p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1262px; 
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 0 auto; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sponsors Section */
+#sponsors {
+    background-color: #1a2a3a;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#sponsors h2 {
+    color: #ff4655;
+    margin-bottom: 10px;
+}
+
+#sponsors p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Flexbox container for the sponsors logos */
+.sponsors-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* Styling for sponsor logos */
+.sponsors-container img {
+    max-width: 200px; 
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sponsors-container img:hover {
+    transform: scale(1.1); 
+}
+
+
+/* Footer Section */
+/* Footer Section */
+#footer {
+    background-color: #1a2a3a;
+    padding: 20px;
+    color: #ff4655;
+    text-align: center;
+}
+
+/* Footer Social Links */
+#footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer .social-links a {
+    color: #ff4655;
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#footer .social-links a:hover {
+    color: white;
+}
+
+/* Responsive Footer */
+#footer .social-links {
+    flex-wrap: wrap;
+}

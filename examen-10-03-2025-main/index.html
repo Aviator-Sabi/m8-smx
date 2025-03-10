@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campionat Ultimate Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>GC FP Llefià</h1>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#hero">Inici</a></li>
+                <li><a href="#schedule">Horaris</a></li>
+                <li><a href="#registration">Inscripció</a></li>
+                <li><a href="#featured-games">Jocs</a></li>
+                <li><a href="#sponsors">Patrocinadors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>CAMPIONAT DE GAMING FP LLEFIÀ</h2>
+        <p>Participa en el torneig de videojocs més prestigiós de l'any, on els millors jugadors del món competiran per la glòria i un premi de 100.000 $.</p>
+        <button><a href="#registration" class="hero-button">Regira't ara</a></button>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="schedule-centerd">
+            <h2>Horaris del Torneig</h2>
+            <p>Marca al teu calendari aquests emocionants partits i esdeveniments. Totes les hores estan en EST.</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Joc</th>
+                    <th>Ronda</th>
+                    <th>Localització</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 de juny de 2025</td>
+                    <td>2:00</td>
+                    <td>Valorante</td>
+                    <td>Clasificatoris</td>
+                    <td>Arena principal</td>
+                </tr>
+                <tr>
+                    <td>15 de juny de 2025</td>
+                    <td>11:00</td>
+                    <td>League of Legends</td>
+                    <td>Etapa B</td>
+                    <td>Arena principal</td>
+                </tr>
+                <tr>
+                    <td>16 de juny de 2025</td>
+                    <td>15:00</td>
+                    <td>Contraataque 2</td>
+                    <td>Calificados</td>
+                    <td>Arena principal</td>
+                </tr>
+                <tr>
+                    <td>17 de juny de 2025</td>
+                    <td>12:00</td>
+                    <td>Valorante</td>
+                    <td>Cuartos de final</td>
+                    <td>Arena principal</td>
+                </tr>
+                <tr>
+                    <td>17 de juny de 2025</td>
+                    <td>15:00</td>
+                    <td>League of Legends</td>
+                    <td>Cuartos de final</td>
+                    <td>Arena principal</td>
+                </tr>
+                <tr>
+                    <td>18 de juny de 2025</td>
+                    <td>11:00</td>
+                    <td>Contraataque 2</td>
+                    <td>Semifinals</td>
+                    <td>Arena principal</td>
+                </tr>
+                <tr>
+                    <td>18 de juny de 2025</td>
+                    <td>15:00</td>
+                    <td>Dota 2</td>
+                    <td>Semifinals</td>
+                    <td>Arena principal</td>
+                </tr>
+                <tr>
+                    <td>19 de juny de 2025</td>
+                    <td>15:00</td>
+                    <td>Espantar</td>
+                    <td>Grandes Finals</td>
+                    <td>Arena principal</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration">
+        <div id="registration">
+            <h2>Inscripció al Torneig</h2>
+            <p>Omple el següent formulari per assegurar la teva plaça al Campionat Ultimate Gaming.</p>
+            <form action="#" method="POST">
+                <!-- Nom complet -->
+                <label for="full-name">Nom complet:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Nom i cognoms" required>
+        
+                <!-- Correu electrònic -->
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" placeholder="exemple@domini.com" required>
+        
+                <!-- Telèfon -->
+                <label for="phone">Número de telèfon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telèfon" required>
+        
+                <!-- Joc -->
+                <label for="game">Joc:</label>
+                <select id="game" name="game" required>
+                    <option value="valorant">Valorant</option>
+                    <option value="league-of-legends">League of Legends</option>
+                    <option value="counter-strike">Counter-Strike 2</option>
+                    <option value="dota2">Dota 2</option>
+                </select>
+        
+                <!-- Nom de l'equip -->
+                <label for="team-name">Nom de l'equip:</label>
+                <input type="text" id="team-name" name="team-name" placeholder="Nom de l'equip" required>
+        
+                <!-- Experiència en videojocs -->
+                <label for="gaming-experience">Experiència en videojocs (Anys):</label>
+                <input type="number" id="gaming-experience" name="gaming-experience" placeholder="Anys d'experiència" min="1" required>
+        
+                <!-- Informació addicional -->
+                <label for="additional-info">Informació addicional:</label>
+                <textarea id="additional-info" name="additional-info" placeholder="Escriu aquí qualsevol informació addicional" rows="4"></textarea>
+        
+                <!-- Botó d'enviament -->
+                <button type="submit">Enviar inscripció</button>
+            </form>
+        </div>
+    </section>        
+
+    <!-- Featured Games Section -->
+    <section id="featured-games">
+            <h2>Jocs destacats</h2>
+            <p>Competeix en aquests emocionants títols per guanyar grans premis i glòria eterna.</p>
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="img/valorant.jpg" alt="Valorant">
+                    <h3>Valorant</h3>
+                    <p>Un FPS tàctic de 5 contra 5 basat en personatges, on la precisió amb armes es combina amb habilitats úniques d'agents.</p>
+                    <p><strong>Premi:</strong> 30.000 $</p>
+                    <a href="#" class="card-button">Més informació</a>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="img/lol.jpg" alt="League of Legends">
+                    <h3>League of Legends</h3>
+                    <p>Joc estratègic per equips on dos equips de cinc campions lluiten per destruir la base enemiga.</p>
+                    <p><strong>Premi:</strong> 30.000 $</p>
+                    <a href="#" class="card-button">Més informació</a>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="img/counter.jpg" alt="Counter Strike 2">
+                    <h3>Counter-Strike 2</h3>
+                    <p>El clàssic joc d'acció per equips on contraterrestres s'enfronten a terroristes.</p>
+                    <p><strong>Premi:</strong> 25.000 $</p>
+                    <a href="#" class="card-button">Més informació</a>
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="img/dota2.jpg" alt="Dota 2">
+                    <h3>Dota 2</h3>
+                    <p>Joc multijugador d'arena de batalla en línia on dos equips competeixen per destruir l'antic enemic.</p>
+                    <p><strong>Premi:</strong> 15.000 $</p>
+                    <a href="#" class="card-button">Més informació</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Els millors moments del torneig</h2>
+        <p>Gaudeix dels millors moments de l'última edició del Campionat Ultimate Gaming.</p>
+        <div class="video-container">
+            <iframe width="1262" height="710" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>    
+
+    <!-- Sponsors Section -->
+    <section id="sponsors">
+        <h2>Els nostres patrocinadors</h2>
+        <p>El Campionat Ultimate Gaming compta amb el suport d'aquestes fantàstiques marques.</p>
+        <div class="sponsors-container">
+            <img src="img/hyperx.png" alt="Sponsor 1">
+            <img src="img/hyperx.png" alt="Sponsor 2">
+            <img src="img/hyperx.png" alt="Sponsor 3">
+            <img src="img/hyperx.png" alt="Sponsor 4">
+            <img src="img/hyperx.png" alt="Sponsor 5">
+        </div>
+    </section>    
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 Campionat Ultimate Gaming. Tots els drets reservats.</p>
+        <div id="footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook">F</a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter">T</a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram">I</a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">L</a>
+                <a href="https://www.youtube.com" target="_blank" title="YouTube">Y</a>
+            </div>
+        </div>        
+    </footer>
+
+</body>
+</html>
