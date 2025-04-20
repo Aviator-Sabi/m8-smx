@@ -1,0 +1,403 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #faf9f4;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e9c46a;
+    color: #1a1a1a;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e0b84e;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #e9c46a;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e0b84e;
+    transform: translateY(-2px);
+}
+
+.divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #faf9f4;
+}
+
+.logo a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1a1a1a;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.cart svg {
+    vertical-align: middle;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content > div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.subtitle h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.description p, .cta p {
+    margin-bottom: 20px;
+}
+
+/*Food Gallery Section*/
+.food-gallery {
+    display: flex;
+}
+
+.gallery-image {
+    flex: 1;
+    height: 500px; 
+    width: 100%;
+    background-color: #e0e0e0;
+    overflow: hidden; 
+}
+
+.gallery-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/*most-favorite*/
+.most-favorite {
+    padding: 50px 5%;
+}
+
+.most-favorite h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    text-align: left;
+}
+
+.menu-image {
+    height: 250px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    overflow: hidden; 
+}
+
+.menu-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #555;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Cuisine Section */
+.cuisine-section {
+    padding: 50px 5%;
+}
+
+.cuisine-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.cuisine-item {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.cuisine-image {
+    flex: 1;
+    height: 250px;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    overflow: hidden; 
+}
+
+.cuisine-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.cuisine-details {
+    flex: 1;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cuisine-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cuisine-details .price {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Story Section */
+.story-section {
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+}
+
+.story-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.story-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.story-content p {
+    margin-bottom: 30px;
+}
+
+.story-image {
+    flex: 1;
+    height: 500px;
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Social Media Gallery */
+.social-section {
+    padding: 50px 5%;
+    background-color: #f7f7f7;
+}
+
+.social-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 15px;
+}
+
+.social-item {
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-item.large {
+    grid-row: span 2;
+}
+
+.social-item.large-wide {
+    grid-column: span 2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .hero-content > div {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cuisine-item, .story-section {
+        flex-direction: column;
+    }
+    
+    .cuisine-image, .story-image {
+        margin-bottom: 30px;
+    }
+    
+    .cuisine-details {
+        padding: 30px 0;
+    }
+    
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        margin-bottom: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-item.large-wide {
+        grid-column: auto;
+    }
+}

@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Graduate', sans-serif;
+    background-color: #fffbea;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #292929;
+    padding: 15px 0;
+}
+
+.menu-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-bar li {
+    display: inline;
+}
+
+.menu-bar a {
+    text-decoration: underline;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hamburger Menu (hidden by default) */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Featured Section */
+.featured h1 {
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+.dish {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-bar {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
